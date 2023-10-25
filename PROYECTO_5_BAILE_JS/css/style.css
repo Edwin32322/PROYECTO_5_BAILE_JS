@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    min-height: 100vh;
+}
+.esqueletoOff{
+    border: 0.2rem solid rgb(0, 0, 0);
+    border-radius: 1vh;
+    width: 550px;
+    height: 600px;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    background-color: rgb(28, 0, 169);
+    background-image: url("../img/esqueletoEstatico.png");
+}
+.esqueletoOnOff{
+    width: 100px;
+    height: 50px;
+    background-color: rgb(75, 41, 247);
+    border-radius: 1vh;
+    cursor: pointer;
+    border: 0.2rem solid rgb(0, 0, 0);
+    position: fixed;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.esqueletoOnOff:hover{
+    background-color: red;
+}
+.esqueletoOff.on{
+    background-image: url("../img/esqueletoMovimiento.gif")
+}
